@@ -3,12 +3,9 @@ body {
 }
 	
 .header-image {
-    filter: brightness(0.65);
-background: url(hintergrundbild.jpg) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover; 
+filter: brightness(0.65);
+width: 100vh;
+hight: 104vh;
 }
 
 
