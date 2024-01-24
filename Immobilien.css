@@ -97,7 +97,29 @@ max-width: 100%;
 	
 
 	
-	
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 20px;
+  }
+
+  .menu-link {
+    font-size: 16px; /* Kleinere Schriftgröße für Links auf kleinen Bildschirmen */
+  }
+
+  .headline {
+    top: 100px; /* Angepasste Position für kleine Bildschirme */
+    font-size: 32px; /* Kleinere Schriftgröße */
+  }
+
+  .underline {
+    top: 200px; /* Angepasste Position für kleine Bildschirme */
+    font-size: 16px; /* Kleinere Schriftgröße */
+  }
+
+  h2 {
+    font-size: 24px; /* Kleinere Schriftgröße für Überschriften auf kleinen Bildschirmen */
+  }
+}	
 
 
   
