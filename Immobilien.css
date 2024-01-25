@@ -94,4 +94,13 @@ max-width: 100%;
 	padding: 8px 20px;
 	border-radius: 8px;
  }
-	
+
+  .button::after {
+      content: '\2193'; /* Pfeil nach unten (Unicode-Zeichen) */
+      display: inline-block;
+      margin-left: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover::after {
+      transform: translateY(3px);
