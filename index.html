@@ -24,9 +24,7 @@
 	
 <h1 class="headline"> Wo Eleganz auf Exklusivität trifft: <span class="Gray"> Die spektakulärsten Immobilien. </span> </h1>
 
-<a class="underline button" href="#angebote">Erfahre mehr</a>
-
-	
+<a class="underline button" href="#angebote" onclick="scrollToSection('angebote')">Erfahre mehr</a>	
 <h2> Immoblilien  </h2> 
 
 <div class="description-section">
@@ -59,5 +57,16 @@ Entdecken Sie, wie zeitlose Architektur und anspruchsvolles Design harmonisch mi
 
 Erleben Sie den Luxus in seiner reinsten Form. Willkommen in Ihrer neuen Dimension des Wohnens.
 
+
+
+<script>
+  // JavaScript-Funktion, um zur Angebote-Sektion zu scrollen
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
 </body>
 </html>
