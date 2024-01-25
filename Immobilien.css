@@ -96,7 +96,6 @@ max-width: 100%;
  }
 
   .button::after {
-      content: '\2193'; /* Pfeil nach unten (Unicode-Zeichen) */
       display: inline-block;
       margin-left: 5px;
       transition: transform 0.3s ease;
