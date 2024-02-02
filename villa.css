@@ -79,11 +79,12 @@ button {
     }
 
     button {
-        margin-left: 0; /* Reset margin for smaller screens */
+        margin-left: 100px; /
+        
     }
 
     .menu-link {
-        margin-left: 0; /* Reset margin for smaller screens */
+        margin-left: 200px; /* Reset margin for smaller screens */
     }
 
     .description-section {
