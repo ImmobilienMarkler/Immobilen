@@ -71,3 +71,19 @@ button {
       
     color: #ff4500; 
     }
+
+@media (max-width: 700px) {
+﻿﻿.description-section
+ flex-direction: column; 
+
+height: unset;
+}
+
+
+﻿﻿.video-container {
+width: unset;
+display:flex;
+justify-content: center;
+  }
+  
+}
