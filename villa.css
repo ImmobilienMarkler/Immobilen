@@ -73,16 +73,30 @@ button {
     }
 
 @media (max-width: 700px) {
-﻿﻿.description-section
- flex-direction: column; 
+    .villa {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10px auto; /* Adjust margin for smaller screens */
+    }
 
-height: unset;
+    button {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .menu-link {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .description-section {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .video-container {
+        width: 100%; /* Adjust width for smaller screens */
+        display: flex;
+        justify-content: center;
+    }
 }
-
-
-﻿﻿.video-container {
-width: unset;
-display:flex;
 justify-content: center;
   }
   
