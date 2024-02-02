@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unterseite - Spektakuläre Immobilien</title>
+    <link href="Villa.css" rel="stylesheet">
+    <script>
+        let ascendingOrder = true;
+
+        function sortVillas() {
+            const gallery = document.querySelector('.gallery');
+            const villas = Array.from(gallery.children);
+
+            villas.sort((a, b) => {
+                const priceA = parseFloat(a.querySelector('p:nth-child(3)').innerText.split('$')[1].replace(',', ''));
+                const priceB = parseFloat(b.querySelector('p:nth-child(3)').innerText.split('$')[1].replace(',', ''));
+
+                if (ascendingOrder) {
+                    return priceA - priceB;
+                } else {
+                    return priceB - priceA;
+                }
+            });
+
+            villas.forEach(villa => gallery.appendChild(villa));
+
+            ascendingOrder = !ascendingOrder;
+        }
+    </script>
+</head>
+<body>
+
+
+    <div class="container">
+       
+        <section class="header">
+            <h1>Luxuriöse Villen</h1>
+    
+        <a class="menu-link"href="Immobilien.html">Homepage</a>
+	
+    <button onclick="sortVillas()">Sortieren</button> 
+        </section>
+
+        <section class="gallery">
+		<div class="villa">
+                <img src="https://img.fotocommunity.com/villa-am-starnberger-see-c97e737b-c503-4906-b12d-19d5d554d48a.jpg?height=1080" alt="Villa 1">
+                <h2>Villa am See</h2>
+                <p>Preis: $2,500,000</p>
+                <p>Luxuriöse Villa mit Blick auf einen malerischen See.</p>
+            </div>
+            
+            <div class="villa">
+              <img src="https://img.freepik.com/fotos-premium/luxurioese-strandvilla-mit-infinity-pool-und-atemberaubendem-meerblick_124507-109304.jpg" alt="Villa 2">
+                <h2>Strandvilla</h2>
+                <p>Preis: $3,200,000</p>
+                <p>Geräumige Strandvilla mit direktem Zugang zum Sandstrand. Diese exklusive Strandvilla bietet einen atemberaubenden Blick auf das Meer, einen Infinity-Pool und luxuriöse Annehmlichkeiten. Genießen Sie Ihren eigenen privaten Rückzugsort am Strand.</p>
+            </div>
+            
+            <div class="villa">
+              <img src="https://img.freepik.com/fotos-premium/oceanfront-oasis-atemberaubende-strandvilla-mit-panoramablick_974613-2427.jpg" alt="Villa 3">
+                <h2>Strandvilla mit Panoramablick</h2>
+                <p>Preis: $3,800,000</p>
+                <p>Eine elegante Strandvilla mit Panoramablick auf das azurblaue Meer. Diese exquisit gestaltete Villa verbindet modernen Luxus mit der Schönheit der Natur. Entspannen Sie auf Ihrer eigenen Terrasse und lassen Sie sich von der Schönheit der Umgebung verzaubern.</p>
+            </div>
+
+            <div class="villa">
+           <img src="https://www.myboutiquehotel.com/photos/109058/furaveri-maldives-raa-atoll-381-59193-1110x700.jpg" alt="Villa 4">
+                <h2>Luxusstrandresidenz</h2>
+                <p>Preis: $4,500,000</p>
+                <p>Die ultimative Luxusstrandresidenz mit exklusivem Design und erstklassigen Annehmlichkeiten. Diese Villa bietet nicht nur einen eigenen Strandzugang, sondern auch einen privaten Pool und einen weitläufigen Garten. Erleben Sie unvergleichlichen Luxus direkt am Meer.</p>
+            </div>
+            <div class="villa">
+              <img src="https://www.engelvoelkers.com/images/d52eebdc-64b2-4b82-8cc2-9c21803be3fc/puerto-ban%C3%BAs:-eine-exquisites-luxusvilla-in-der-n%C3%A4he-der-sonnenverw%C3%B6hnten" alt="Villa 5">
+                <h2>Exklusive Strandresidenz</h2>
+                <p>Preis: $5,200,000</p>
+                <p>Diese exklusive Strandresidenz bietet ein Höchstmaß an Luxus und Komfort. Genießen Sie den privaten Strandzugang, den Infinity-Pool und die modernen Annehmlichkeiten dieser erstklassigen Immobilie. Ein Traumhaus direkt am Meer.</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Kontaktieren Sie uns für weitere Informationen über diese luxuriösen Villen.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
