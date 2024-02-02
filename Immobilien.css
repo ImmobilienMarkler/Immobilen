@@ -3,7 +3,7 @@ body {
 }
 	
 .header-image {
-    height: 104vh;
+    height: 800px;
     width: 100%;
     object-fit: cover;
     filter: brightness(0.65);
@@ -16,7 +16,7 @@ position: absolute;
 right: 32px;
 left: 32px;
 top: 40px;
-font-size: 24px;
+font-size: 3px;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -26,10 +26,13 @@ justify-content: space-between;
 .menu-link {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
-  display: inline-block;
-  position: relative;
-  font-size: 24px;
+  margin-left: 4px;
+  top:100px;
+   left: 1900px;
+	display: inline-block;
+  position: absolute;
+  font-size: 25px;
+justify-content: space-between;
   transition: color 0.3s ease-in-out;
 }
 
@@ -42,20 +45,20 @@ justify-content: space-between;
 .description-section  {
 
  hight: 500px;
- padding: 100px 100px;
+ padding: 40px 40px;
  display: flex;
- gap: 600px;
+ gap: 550px;
  
  }
  
  .headline  {
 
 position: absolute;
-left: 50px;
+left: 20px;
 top: 300px;
 color: white;
-font-size: 65px;
-width: 1000px;
+font-size: 45px;
+width: 400px;
 text-shadow: 10px 10px rgba(0,0,0, 0,5) ;
  }
  
@@ -89,15 +92,14 @@ padding: 10px;
 
 .button {
 	text-decoration: none;
-	background-color: #dc143c ;
-	padding: 8px 20px;
-	border-radius: 8px;
+	background-color: red ;
+	padding: 3px 10px 2px;
+	border-radius: 7px;
     transition: opacity 0,3s;
  }
 	
  .button:hover {
     opacity: 0.75;
-
  }
 	
  .button::after {
@@ -110,36 +112,3 @@ padding: 10px;
     transform: translateY(3px);	
 	
 
-
-@media only screen and (max-width: 767px) {
-    .description-section {
-      height: auto; /* Höhe automatisch anpassen */
-      padding: 50px; /* Reduziere den Padding-Abstand */
-      flex-direction: column; /* Ändere die Ausrichtung auf vertikal */
-      gap: 20px; /* Reduziere den Abstand zwischen den Elementen */
-    }
-  }
-  
-
-﻿﻿.half-width {
-width: unset;
-}
-
-﻿﻿.video-container {
-width: unset;
-display:flex;
-justify-content: center;
-  }
-  
-}
-
-width: unset;
-}
-
-﻿
-.header-image {
-    height: 500px;
-}
-h2 {
-    font-size: 20px;
-}
