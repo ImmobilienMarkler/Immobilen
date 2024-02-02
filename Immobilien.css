@@ -110,12 +110,16 @@ padding: 10px;
     transform: translateY(3px);	
 	
 
-@media (max-width: 700px) {
-﻿﻿.description-section
- flex-direction: column; 
- align-items: center;
-height: unset;
-}
+
+@media only screen and (max-width: 767px) {
+    .description-section {
+      height: auto; /* Höhe automatisch anpassen */
+      padding: 50px; /* Reduziere den Padding-Abstand */
+      flex-direction: column; /* Ändere die Ausrichtung auf vertikal */
+      gap: 20px; /* Reduziere den Abstand zwischen den Elementen */
+    }
+  }
+  
 
 ﻿﻿.half-width {
 width: unset;
@@ -128,4 +132,9 @@ justify-content: center;
   }
   
 }
+
+width: unset;
+}
+
+﻿
 
